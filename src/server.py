@@ -24,16 +24,16 @@ def api_request(query_params):
 
 
 @app.route("/")
-def hello_world():
-
-    return render_template("welcome.html", )
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome.html")
 
 @app.route("/game")
 def construct_game():
 
     global COUNTRY_NAME, HINTS
     COUNTRY_OBJ = random_country()
-    COUNTRY_NAME = unidecode(COUNTRY_OBJ['names']['common']).lower()
+    COUNTRY_NAME = COUNTRY_OBJ['names']['common']
 
     example_neighbour_isos = COUNTRY_OBJ['borders']
     if example_neighbour_isos:
@@ -54,15 +54,19 @@ def construct_game():
         languages_list.append(language['name'])
     languages_text = ", ".join(languages_list)
 
-    HINTS = ["Hint 1: The country is located in " + str(COUNTRY_OBJ['region']),
-            "Hint 2: The country has a population of " + str(COUNTRY_OBJ['population']),
-            "Hint 3: The country has a capital city called " + capitals_text,
-            "Hint 4: The country has " + str(example_neighbour) + " as a neighbouring country",
-            "Hint 5: The country has a land area of " + str(COUNTRY_OBJ['area']['kilometers']) + " square kilometers",
-            "Hint 6: The country has the following languages spoken: " + languages_text]
+    HINTS = [
+        "Hint 1: The country is located in " + str(COUNTRY_OBJ['region']),
+        "Hint 2: The country has a population of " + str(COUNTRY_OBJ['population']),
+        "Hint 3: The country has a capital city called " + capitals_text,
+        "Hint 4: The country has " + str(example_neighbour) + " as a neighbouring country",
+        "Hint 5: The country has a land area of " + str(COUNTRY_OBJ['area']['kilometers']) + " square kilometers",
+        "Hint 6: The country has the following languages spoken: " + languages_text
+    ]
+
+    SHOWN_HINTS.clear()
+    SHOWN_HINTS.append(HINTS.pop(0))
     
-    
-    return render_template("game.html", guesses=0, country_name=COUNTRY_NAME)
+    return render_template("game.html", guesses=0, hints=SHOWN_HINTS, country_name=COUNTRY_NAME)
 
 @app.route("/guess", methods=["POST"])
 def guess():
@@ -70,13 +74,14 @@ def guess():
     guess = request.form.get("guess")
     guesses_count = int(request.form.get("guesses"))
     normalized_guess = unidecode(guess).lower()
-    SHOWN_HINTS.append(HINTS.pop(0)) if HINTS else None
+    normalized_country_name = unidecode(COUNTRY_NAME).lower()
 
-    if normalized_guess == COUNTRY_NAME:
-        return render_template("winner.html", message="Congratulations! You guessed the country correctly.")
+    if normalized_guess == normalized_country_name:
+        return render_template("winner.html", country_name=COUNTRY_NAME)
     if not HINTS:
-        return render_template("loser.html", message=COUNTRY_NAME)
+        return render_template("loser.html", country_name=COUNTRY_NAME)
 
+    SHOWN_HINTS.append(HINTS.pop(0)) if HINTS else None
     return render_template("game.html", 
                                message="Incorrect guess. Try again.", 
                                guesses=guesses_count + 1,
@@ -86,6 +91,7 @@ def random_country():
 
     number = random.randint(0, 248)
     json = api_request(f"limit=1&offset={number}")
+    print(json)
     country = json['data']['objects'][0]
     return country
     

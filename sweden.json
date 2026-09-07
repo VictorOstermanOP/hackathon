@@ -1,0 +1,370 @@
+{
+  "data": {
+    "objects": [
+      {
+        "names": {
+          "alternates": [],
+          "common": "Sweden",
+          "native": {
+            "swe": {
+              "common": "Sverige",
+              "official": "Konungariket Sverige"
+            }
+          },
+          "official": "Kingdom of Sweden",
+          "translations": {
+            "ara": {
+              "common": "السويد",
+              "official": "مملكة السويد"
+            },
+            "bre": {
+              "common": "Sveden",
+              "official": "Rouantelezh Sveden"
+            },
+            "ces": {
+              "common": "Švédsko",
+              "official": "Švédské království"
+            },
+            "cym": {
+              "common": "Sweden",
+              "official": "Kingdom of Sweden"
+            },
+            "deu": {
+              "common": "Schweden",
+              "official": "Königreich Schweden"
+            },
+            "est": {
+              "common": "Rootsi",
+              "official": "Rootsi Kuningriik"
+            },
+            "fas": {
+              "common": "سوئد",
+              "official": "پادشاهی سوئد"
+            },
+            "fin": {
+              "common": "Ruotsi",
+              "official": "Ruotsin kuningaskunta"
+            },
+            "fra": {
+              "common": "Suède",
+              "official": "Royaume de Suède"
+            },
+            "hrv": {
+              "common": "Švedska",
+              "official": "Kraljevina Švedska"
+            },
+            "hun": {
+              "common": "Svédország",
+              "official": "Svéd Királyság"
+            },
+            "ind": {
+              "common": "Swedia",
+              "official": "Kerajaan Swedia"
+            },
+            "ita": {
+              "common": "Svezia",
+              "official": "Regno di Svezia"
+            },
+            "jpn": {
+              "common": "スウェーデン",
+              "official": "スウェーデン王国"
+            },
+            "kor": {
+              "common": "스웨덴",
+              "official": "스웨덴 왕국"
+            },
+            "nld": {
+              "common": "Zweden",
+              "official": "Koninkrijk Zweden"
+            },
+            "pol": {
+              "common": "Szwecja",
+              "official": "Królestwo Szwecji"
+            },
+            "por": {
+              "common": "Suécia",
+              "official": "Reino da Suécia"
+            },
+            "rus": {
+              "common": "Швеция",
+              "official": "Королевство Швеция"
+            },
+            "slk": {
+              "common": "Švédsko",
+              "official": "Švédske kráľovstvo"
+            },
+            "spa": {
+              "common": "Suecia",
+              "official": "Reino de Suecia"
+            },
+            "srp": {
+              "common": "Шведска",
+              "official": "Краљевина Шведска"
+            },
+            "swe": {
+              "common": "Sverige",
+              "official": "Konungariket Sverige"
+            },
+            "tur": {
+              "common": "İsveç",
+              "official": "İsveç Krallığı"
+            },
+            "urd": {
+              "common": "سویڈن",
+              "official": "مملکتِ سویڈن"
+            },
+            "zho": {
+              "common": "瑞典",
+              "official": "瑞典王国"
+            }
+          }
+        },
+        "codes": {
+          "alpha_2": "SE",
+          "alpha_3": "SWE",
+          "ccn3": "752",
+          "cioc": "SWE",
+          "fifa": "SWE",
+          "fips": "SW",
+          "gec": "SW"
+        },
+        "capitals": [
+          {
+            "attributes": {
+              "administrative": false,
+              "constitutional": false,
+              "executive": false,
+              "judicial": false,
+              "legislative": false,
+              "primary": true
+            },
+            "coordinates": {
+              "lat": 59.33,
+              "lng": 18.05
+            },
+            "name": "Stockholm"
+          }
+        ],
+        "flag": {
+          "colors": {
+            "dominant": "#f6d000",
+            "palette": [
+              {
+                "hex": "#f6d000",
+                "proportion": 0.282958984375
+              },
+              {
+                "hex": "#054d93",
+                "proportion": 0.66552734375
+              },
+              {
+                "hex": "#075c8d",
+                "proportion": 0.017333984375
+              },
+              {
+                "hex": "#e9c60d",
+                "proportion": 0.016845703125
+              },
+              {
+                "hex": "#195e7c",
+                "proportion": 0.000244140625
+              },
+              {
+                "hex": "#144e8d",
+                "proportion": 0.0166015625
+              },
+              {
+                "hex": "#004c9a",
+                "proportion": 0.00048828125
+              },
+              {
+                "hex": "#29cfb8",
+                "proportion": 0
+              }
+            ],
+            "prominent": "#054d93",
+            "swatches": {
+              "dark_muted": "#144e8d",
+              "dark_vibrant": "#054d93",
+              "light_muted": "#29cfb8",
+              "light_vibrant": "#f6d000",
+              "muted": "#195e7c",
+              "vibrant": "#e9c60d"
+            }
+          },
+          "description": "The flag of Sweden has a blue field with a large golden-yellow cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side.",
+          "emoji": "🇸🇪",
+          "html_entity": "&#127480;&#127466;",
+          "unicode": "U+1F1F8 U+1F1EA",
+          "url_png": "https: //flags.restcountries.com/v5/w640/se.png",
+          "url_svg": "https://flags.restcountries.com/v5/svg/se.svg"
+        },
+        "region": "Europe",
+        "subregion": "Northern Europe",
+        "area": {
+          "kilometers": 450295,
+          "miles": 173859.8
+        },
+        "assets": [],
+        "borders": [
+          "FIN",
+          "NOR"
+        ],
+        "calling_codes": [
+          "46"
+        ],
+        "cars": {
+          "driving_side": "right",
+          "signs": [
+            "S"
+          ]
+        },
+        "classification": {
+          "dependency": false,
+          "dependency_type": "",
+          "disputed": false,
+          "iso_status": "official",
+          "sovereign": true,
+          "un_member": true,
+          "un_observer": false
+        },
+        "continents": [
+          "Europe"
+        ],
+        "coordinates": {
+          "lat": 62,
+          "lng": 15
+        },
+        "currencies": [
+          {
+            "code": "SEK",
+            "name": "Swedish krona",
+            "symbol": "kr"
+          }
+        ],
+        "date": {
+          "academic_year_start": {
+            "day": 1,
+            "month": 9
+          },
+          "fiscal_year_start": {
+            "corporate": {
+              "basis": "convention",
+              "day": 1,
+              "month": 1
+            },
+            "government": {
+              "day": 1,
+              "month": 1
+            },
+            "personal": {
+              "day": 1,
+              "month": 1
+            }
+          },
+          "start_of_week": "monday"
+        },
+        "demonyms": {
+          "eng": {
+            "f": "Swedish",
+            "m": "Swedish"
+          },
+          "fra": {
+            "f": "Suédoise",
+            "m": "Suédois"
+          }
+        },
+        "descriptions": {
+          "long": "Sweden is a monarchy with Stockholm as its capital and Swedish as its official language, and it joined the European Union in 1995 and NATO in 2024. The krona is the currency, and vehicles, machinery, paper and iron ore lead trade.",
+          "short": "Sweden is a Nordic constitutional monarchy on the east side of the Scandinavian Peninsula."
+        },
+        "economy": {
+          "gini_coefficient": {
+            "2019": 29.3,
+            "2020": 28.9,
+            "2021": 29.8,
+            "2022": 31.6,
+            "2023": 29.3
+          }
+        },
+        "government_type": "Unitary parliamentary constitutional monarchy",
+        "landlocked": false,
+        "languages": [
+          {
+            "bcp47": "sv",
+            "iso639_1": "sv",
+            "iso639_2b": "swe",
+            "iso639_2t": "swe",
+            "iso639_3": "swe",
+            "name": "Swedish",
+            "native_name": "svenska"
+          }
+        ],
+        "leaders": [
+          {
+            "message": "data.leaders is only available on paid plans. Go to https://restcountries.com/plans to make updates to your account.",
+            "sample": "https://files-03.restcountries.com/countries.00/sample.leaders.json"
+          }
+        ],
+        "links": {
+          "google_maps": "https://goo.gl/maps/iqygE491ADVgnBW39",
+          "official": "https://www.government.se",
+          "open_street_maps": "https://www.openstreetmap.org/relation/52822",
+          "wikipedia": "https://en.wikipedia.org/wiki/Sweden"
+        },
+        "memberships": {
+          "african_union": false,
+          "arab_league": false,
+          "asean": false,
+          "brics": false,
+          "commonwealth": false,
+          "eu": true,
+          "eurozone": false,
+          "g20": false,
+          "g7": false,
+          "nato": true,
+          "oecd": true,
+          "opec": false,
+          "schengen": true,
+          "un": true
+        },
+        "number_format": {
+          "decimal_separator": ",",
+          "thousands_separator": "."
+        },
+        "parent": {
+          "alpha_2": "",
+          "alpha_3": ""
+        },
+        "population": 10610483,
+        "postal_code": {
+          "format": "SE-### ##",
+          "regex": "^(?:SE)*(\\d{5})$"
+        },
+        "timezones": [
+          "UTC+01:00"
+        ],
+        "tlds": [
+          ".se"
+        ],
+        "units": {
+          "measurement_system": "metric",
+          "temperature_scale": "Celsius"
+        },
+        "uuid": "a8df2232-b443-4501-8be7-34777297bfe7",
+        "_meta": {
+          "lastUpdatedTimestamp": 1788557521
+        }
+      }
+    ],
+    "meta": {
+      "total": 254,
+      "count": 1,
+      "limit": 1,
+      "offset": 217,
+      "more": true,
+      "request_id": "ee0016d8-f73c-4d82-a5a8-ace52920cc11",
+      "duration": 27
+    }
+  }
+}

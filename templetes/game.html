@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Game</title>
+	</head>
+	<body>
+		<main>
+			<h1>Guess the country {{country_name}}</h1>
+			<p>Number of guesses: {{ guesses }}</p>
+
+			<form action="/guess" method="post">
+				<label for="guess">Your guess</label>
+				<input type="text" id="guess" name="guess" value="{{ guess | default('') }}" required>
+                <input type="hidden" id="guesses" name="guesses" value="{{ guesses }}">
+				<button type="submit">Submit Guess</button>
+			</form>
+		</main>
+
+        <ul id="hint_list">
+            {% for hint in hints %}
+				<li>{{ hint }}</li>
+			{% endfor %}
+        </ul>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+5 [flag][url_png]
+1 [area][kilometers]
+4 [region]
+[borders], returnerar en lista, räkna elemnt
+[languages] lista alla 
+3 [population]
+2 [timezones] lista alla
+[tlds] lista allas
+[capitals] lista alla

@@ -35,11 +35,11 @@ def construct_game():
     COUNTRY_OBJ = random_country()
     COUNTRY_NAME = COUNTRY_OBJ['names']['common']
 
-    example_neighbour_isos = COUNTRY_OBJ['borders']
-    if example_neighbour_isos:
-        example_neighbour_iso = random.choice(example_neighbour_isos)
+    neighbour_isos = COUNTRY_OBJ['borders']
+    if neighbour_isos:
+        example_neighbour_iso = random.choice(neighbour_isos)
         example_neighbour = api_request(
-            f"iso={example_neighbour_iso}"
+            f"codes.alpha_3={example_neighbour_iso}"
         )["data"]["objects"][0]["names"]["common"]
     else:
         example_neighbour = "No neighbouring countries"
